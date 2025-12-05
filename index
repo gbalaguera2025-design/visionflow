@@ -1,0 +1,27 @@
+# VisionFlow: Traffic Classification with AlexNet
+
+Welcome to my final project for Mathematics of Data Science.
+
+This website presents:
+- The problem I’m solving  
+- How AlexNet works  
+- My experiments and results  
+- Links to my Colab + wandb project
+
+---
+
+## 🔗 Project Links
+
+**Colab Notebook:**  
+(Add your Colab link here)
+
+**Weights & Biases Project:**  
+https://wandb.ai/gbalaguera2025-florida-atlantic-university/visionflow-alexnet?nw=nwusergbalaguera2025
+
+---
+
+## 📘 Navigation
+
+- [Problem & Motivation](problem.md)
+- [Technical Approach](technical.md)
+- [Results & Experiments](results.md)

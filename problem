@@ -1,27 +1,43 @@
-# Problem & Motivation
+---
+layout: page
+title: Problem & Motivation
+permalink: /problem.html
+---
 
-Modern cities rely on road traffic, but:
+# 🚦 Problem & Motivation
 
-- Accidents and near-misses can happen quickly  
-- Humans can’t perfectly monitor many cameras at once  
-- Most traffic cameras just record video and don’t “understand” what they see  
+Modern cities depend on road transportation, but:
 
-## Real-World Problem
+- Crashes and near-misses can happen in seconds  
+- Humans can’t constantly watch every camera feed  
+- Most camera systems just record video without understanding it  
 
-This project focuses on a simpler version of a smart-city problem:
+---
 
-> Automatically deciding whether a traffic camera frame shows **traffic** or **no traffic**.
+## 🎯 Project Problem
 
-This is useful because it can help:
+The simplified problem I tackle in **VisionFlow** is:
 
-- Detect when roads are busy or unusually empty  
-- Support traffic control centers  
-- Serve as a building block for accident detection or congestion alerts  
+> **Given a traffic-camera image, decide whether it shows “traffic” or “no traffic”.**
 
-## Why It Matters
+This is a first step toward:
 
-- Better **safety**: faster response to dangerous situations  
-- Better **data**: measure how often roads are busy or empty  
-- Better **automation**: reduce pressure on humans watching screens all day  
+- Detecting unusual congestion  
+- Spotting empty roads when they *should* be busy  
+- Supporting real-time traffic dashboards and smart-city planning  
+
+---
+
+## 🌍 Why It Matters
+
+- **Safety** – Faster awareness of potential incidents  
+- **Efficiency** – Helps operators monitor many locations  
+- **Data** – Provides structured information instead of raw video  
+
+Even though this project uses a small, labeled dataset, the same ideas can extend to:
+
+- Accident detection  
+- Multi-class traffic states  
+- Integration with automated alerts
 
 [⬅ Back to Home](index.md) · [Next: Technical Approach →](technical.md)

@@ -1,25 +1,44 @@
-# VisionFlow: Traffic Classification With AlexNet
+---
+layout: page
+title: VisionFlow – Traffic Classification with AlexNet
+permalink: /
+---
 
-Welcome to the VisionFlow project website.  
-This project uses **AlexNet** to classify traffic vs. no-traffic images as part of FAU's Mathematics of Data Science course.
+# VisionFlow 🚦
 
-## 🔗 Navigation
-Use the links below to explore the project:
+Welcome to **VisionFlow**, my final project for *Mathematics of Data Science* at FAU.  
+This project uses **AlexNet**, a convolutional neural network, to classify traffic-camera images into:
 
-- [Problem Overview](problem.md)
-- [Technical Approach (AlexNet Architecture)](technical.md)
-- [Experimental Results & Visualizations](results.md)
+- 🟥 **Traffic**
+- 🟩 **No Traffic**
 
 ---
 
-## 📌 Summary
-VisionFlow is an AI-powered computer vision model designed to support real-time detection of **traffic congestion** using images.  
-This project demonstrates:
+## 🧭 Navigate the Project
 
-- dataset preparation  
-- AlexNet model training  
-- hyperparameter experiments  
-- comparison with ResNet18  
-- visualizations logged in Weights & Biases  
+- 👉 [Problem & Motivation](problem.md)
+- 👉 [Technical Approach (AlexNet)](technical.md)
+- 👉 [Experiments & Results](results.md)
 
-Explore the full project using the navigation links above!
+---
+
+## 📊 Quick Stats (Example)
+
+| Item                 | Value               |
+|----------------------|--------------------|
+| Classes              | traffic / no_traffic |
+| Train images         | 160                |
+| Validation images    | 40                 |
+| Best Val Accuracy    | ~95% (AlexNet)     |
+| Framework            | PyTorch + Colab    |
+| Tracking             | Weights & Biases   |
+
+---
+
+## 🔗 Key Links
+
+- 🧪 **Colab Notebook (Code & Experiments):**  
+  *(paste your Colab link here)*
+
+- 📈 **Weights & Biases Project (All Runs & Plots):**  
+  [VisionFlow – AlexNet on W&B](https://wandb.ai/gbalaguera2025-florida-atlantic-university/visionflow-alexnet?nw=nwusergbalaguera2025)

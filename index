@@ -1,27 +1,25 @@
-# VisionFlow: Traffic Classification with AlexNet
+# VisionFlow: Traffic Classification With AlexNet
 
-Welcome to my final project for Mathematics of Data Science.
+Welcome to the VisionFlow project website.  
+This project uses **AlexNet** to classify traffic vs. no-traffic images as part of FAU's Mathematics of Data Science course.
 
-This website presents:
-- The problem I’m solving  
-- How AlexNet works  
-- My experiments and results  
-- Links to my Colab + wandb project
+## 🔗 Navigation
+Use the links below to explore the project:
 
----
-
-## 🔗 Project Links
-
-**Colab Notebook:**  
-(Add your Colab link here)
-
-**Weights & Biases Project:**  
-https://wandb.ai/gbalaguera2025-florida-atlantic-university/visionflow-alexnet?nw=nwusergbalaguera2025
+- [Problem Overview](problem.md)
+- [Technical Approach (AlexNet Architecture)](technical.md)
+- [Experimental Results & Visualizations](results.md)
 
 ---
 
-## 📘 Navigation
+## 📌 Summary
+VisionFlow is an AI-powered computer vision model designed to support real-time detection of **traffic congestion** using images.  
+This project demonstrates:
 
-- [Problem & Motivation](problem.md)
-- [Technical Approach](technical.md)
-- [Results & Experiments](results.md)
+- dataset preparation  
+- AlexNet model training  
+- hyperparameter experiments  
+- comparison with ResNet18  
+- visualizations logged in Weights & Biases  
+
+Explore the full project using the navigation links above!

@@ -1,58 +1,27 @@
-# Technical Approach – AlexNet
+---
+layout: page
+title: Technical Approach (AlexNet)
+permalink: /technical.html
+---
 
-This project uses **AlexNet**, a convolutional neural network (CNN), to classify traffic camera images into two groups:
+# 🧠 Technical Approach – AlexNet
+
+This project uses **AlexNet**, a convolutional neural network (CNN), to classify images into:
 
 - **traffic**
 - **no_traffic**
 
-AlexNet was chosen because it is lightweight, fast to train, and performs well on image classification tasks.
-
 ---
 
-## 📂 Dataset
+## 📂 Dataset Structure
 
-My dataset contains two folders for training and two for validation:
+Stored on Google Drive as:
 
-
-- **Training images:** 160  
-- **Validation images:** 40  
-- **Classes:** `traffic`, `no_traffic`  
-- Loaded using PyTorch’s `ImageFolder()`.
-
----
-
-## 🧹 Preprocessing
-
-Before training, each image is:
-
-- Resized to **224 × 224** (AlexNet input size)  
-- Converted to a tensor  
-- Normalized using ImageNet mean/std  
-
-### ✔ Optional Augmentation (when enabled):
-- Random horizontal flips  
-- Small random rotations  
-- Color jitter  
-
-This helps the model generalize better.
-
----
-
-## 🧠 AlexNet Architecture (Simplified)
-
-AlexNet consists of:
-
-1. **Convolution layers** – detect shapes, edges, patterns  
-2. **ReLU activations** – add nonlinearity  
-3. **MaxPooling layers** – reduce spatial size  
-4. **Dropout layers** – prevent overfitting  
-5. **Fully connected layers** – final classification  
-
-### ✓ Model Modification
-
-The last layer was changed to output **2 classes**:
-
-```python
-model = models.alexnet(weights=models.AlexNet_Weights.IMAGENET1K_V1)
-in_features = model.classifier[6].in_features
-model.classifier[6] = nn.Linear(in_features, 2)
+```text
+VisionFlowDataSet1/
+  train/
+    traffic/
+    no_traffic/
+  val/
+    traffic/
+    no_traffic/

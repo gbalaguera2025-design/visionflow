@@ -1,0 +1,87 @@
+# Results & Experiments
+
+This project includes multiple experiments using AlexNet to classify traffic images.
+
+All runs, accuracy curves, loss curves, and confusion matrices are logged in:
+
+👉 **Weights & Biases Project:**  
+https://wandb.ai/gbalaguera2025-florida-atlantic-university/visionflow-alexnet?nw=nwusergbalaguera2025
+
+---
+
+## 📌 Baseline Model (AlexNet)
+
+**Settings:**
+- Batch size: 32  
+- Learning rate: 0.001  
+- Augmentation: ON  
+- Epochs: 5  
+
+**Performance:**
+- Validation Accuracy: ~ **95%**
+- Loss curve shows stable learning
+- Confusion matrix shows strong class separation
+
+_(You can upload screenshots of your plots into an `images/` folder later.)_
+
+---
+
+## 🧪 Batch Size Experiments (16 vs 64)
+
+Goal: See how batch size affects training.
+
+- **Batch size 16:** More frequent updates, sometimes noisier curves.  
+- **Batch size 64:** Smoother training, sometimes lower accuracy depending on dataset size.
+
+**Observations:**
+- Write your summary after viewing wandb plots.
+
+---
+
+## 🧪 Learning Rate Experiments (0.001 vs 0.0001)
+
+Goal: Test how quickly or slowly the model learns.
+
+- **LR = 0.001:** Fast learning, good accuracy.  
+- **LR = 0.0001:** Slower learning but more stable.
+
+**Observations:**
+- Which learning rate gave the best validation accuracy?
+
+---
+
+## 🎨 Data Augmentation: ON vs OFF
+
+- Augmentation ON → Better generalization  
+- Augmentation OFF → Higher risk of overfitting  
+
+**Observations:**
+- Did validation accuracy improve with augmentation?
+
+---
+
+## 🏆 AlexNet vs. ResNet18
+
+Comparison between two CNN architectures:
+
+- **AlexNet:** Lighter and faster  
+- **ResNet18:** Deeper, uses skip-connections, often more accurate  
+
+**Observations:**
+- Which model performed better on your dataset?
+
+---
+
+## ✔ Takeaways
+
+- AlexNet works well for small traffic datasets  
+- Augmentation helps prevent overfitting  
+- Batch size and learning rate significantly change performance  
+- ResNet18 may outperform AlexNet but takes longer to train  
+
+---
+
+## 🔗 Navigation
+
+[⬅ Back to Technical Approach](technical.md)  
+[⬆ Back to Home](index.md)

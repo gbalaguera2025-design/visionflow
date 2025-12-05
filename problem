@@ -1,0 +1,27 @@
+# Problem & Motivation
+
+Modern cities rely on road traffic, but:
+
+- Accidents and near-misses can happen quickly  
+- Humans can’t perfectly monitor many cameras at once  
+- Most traffic cameras just record video and don’t “understand” what they see  
+
+## Real-World Problem
+
+This project focuses on a simpler version of a smart-city problem:
+
+> Automatically deciding whether a traffic camera frame shows **traffic** or **no traffic**.
+
+This is useful because it can help:
+
+- Detect when roads are busy or unusually empty  
+- Support traffic control centers  
+- Serve as a building block for accident detection or congestion alerts  
+
+## Why It Matters
+
+- Better **safety**: faster response to dangerous situations  
+- Better **data**: measure how often roads are busy or empty  
+- Better **automation**: reduce pressure on humans watching screens all day  
+
+[⬅ Back to Home](index.md) · [Next: Technical Approach →](technical.md)

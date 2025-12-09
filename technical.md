@@ -1,3 +1,8 @@
+---
+layout: default
+title: Technical Approach
+---
+
 # Technical Approach – AlexNet & Training Setup
 
 ## Model: AlexNet

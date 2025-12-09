@@ -1,119 +1,62 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>VisionFlow – Traffic Classification with AlexNet</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      line-height: 1.6;
-      color: #222;
-    }
-    h1 {
-      color: #113a8f;
-      font-size: 2.6rem;
-      margin-bottom: 0.2rem;
-    }
-    h2 {
-      margin-top: 2rem;
-      color: #1f4fa8;
-    }
-    .tagline {
-      font-size: 1.05rem;
-      color: #444;
-      margin-bottom: 1.5rem;
-    }
-    .pill {
-      display: inline-block;
-      padding: 0.15rem 0.5rem;
-      border-radius: 999px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #fff;
-      margin-right: 0.25rem;
-    }
-    .pill-traffic { background: #d93025; }
-    .pill-no-traffic { background: #1a8e3e; }
-    nav a {
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #1f4fa8;
-      font-weight: 600;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    table {
-      border-collapse: collapse;
-      margin-top: 0.75rem;
-      width: 100%;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 0.4rem 0.6rem;
-      text-align: left;
-      font-size: 0.9rem;
-    }
-    th {
-      background: #f4f6fb;
-    }
-    .links a {
-      display: block;
-      margin-bottom: 0.25rem;
-      color: #1f4fa8;
-    }
-  </style>
-</head>
-<body>
+---
+layout: default
+title: VisionFlow
+---
 
-  <h1>visionflow</h1>
-  <p class="tagline">
-    VisionFlow is my final project for <strong>Mathematics of Data Science</strong> at FAU.  
-    It uses <strong>AlexNet</strong>, a convolutional neural network, to classify traffic-camera images into:
-    <span class="pill pill-traffic">Traffic</span>
-    <span class="pill pill-no-traffic">No Traffic</span>
-  </p>
+<h1>visionflow</h1>
 
-  <h2>🚦 Project Overview</h2>
-  <p>
-    The goal of VisionFlow is to automatically detect whether a road camera frame shows
-    heavy traffic or relatively clear roads. This can support smarter transportation systems,
-    alerting city operators in real time and building analytics on congestion patterns.
-  </p>
+<p>
+VisionFlow is my final project for <strong>Mathematics of Data Science</strong> at FAU. 
+It uses <strong>AlexNet</strong>, a convolutional neural network, to classify traffic-camera 
+images into:
+<span style="color:red; font-weight:bold;">Traffic</span> or 
+<span style="color:green; font-weight:bold;">No Traffic</span>.
+</p>
 
-  <h2>🧭 Navigate the Project</h2>
-  <nav>
-    <a href="problem.md">Problem &amp; Motivation</a>
-    <a href="technical.md">Technical Approach</a>
-    <a href="results.md">Experiments &amp; Results</a>
-  </nav>
+<hr>
 
-  <h2>📊 Quick Stats (Dataset &amp; Model)</h2>
-  <table>
-    <tr><th>Item</th><th>Value</th></tr>
-    <tr><td>Classes</td><td>traffic / no_traffic</td></tr>
-    <tr><td>Train images</td><td>160</td></tr>
-    <tr><td>Validation images</td><td>40</td></tr>
-    <tr><td>Best validation accuracy</td><td>≈ 95% (AlexNet baseline)</td></tr>
-    <tr><td>Framework</td><td>PyTorch in Google Colab</td></tr>
-    <tr><td>Tracking &amp; logging</td><td>Weights &amp; Biases (wandb)</td></tr>
-  </table>
+<h2>🚦 Project Overview</h2>
+<p>
+The goal of VisionFlow is to automatically detect whether a road camera frame shows 
+heavy traffic or relatively clear roads. This system can support smarter transportation 
+infrastructure, alerting city operators in real time, improving congestion analytics, and 
+providing data for future traffic modeling.
+</p>
 
-  <h2>🔗 Key Links</h2>
-  <div class="links">
-    <a href="YOUR_COLAB_LINK_HERE" target="_blank">
-      💻 Colab Notebook (Code &amp; Experiments)
-    </a>
+<hr>
+
+<h2>🧭 Navigate the Project</h2>
+<ul>
+  <li><a href="problem">Problem & Motivation</a></li>
+  <li><a href="technical">Technical Approach (AlexNet)</a></li>
+  <li><a href="results">Experiments & Results</a></li>
+</ul>
+
+<hr>
+
+<h2>📊 Quick Stats (Dataset & Model)</h2>
+
+<table>
+<tr><th>Item</th><th>Value</th></tr>
+<tr><td>Classes</td><td>traffic / no_traffic</td></tr>
+<tr><td>Train images</td><td>160</td></tr>
+<tr><td>Validation images</td><td>40</td></tr>
+<tr><td>Best validation accuracy</td><td>≈ 95% (AlexNet baseline)</td></tr>
+<tr><td>Framework</td><td>PyTorch in Google Colab</td></tr>
+<tr><td>Tracking</td><td>Weights & Biases (wandb)</td></tr>
+</table>
+
+<hr>
+
+<h2>🔗 Key Links</h2>
+<ul>
+  <li><strong>Colab Notebook (Code & Experiments):</strong> <em>(paste your Colab link here)</em></li>
+  <li><strong>Weights & Biases Project:</strong> 
     <a href="https://wandb.ai/gbalaguera2025-florida-atlantic-university/visionflow-alexnet" target="_blank">
-      📈 Weights &amp; Biases Project (All Runs &amp; Plots)
+      VisionFlow – AlexNet on W&B
     </a>
-  </div>
+  </li>
+</ul>
 
-  <p style="margin-top:2rem; font-size:0.85rem; color:#666;">
-    Created by Glendys Balaguera · VisionFlow · Fall 2025
-  </p>
-
-</body>
-</html>
+<hr>
+<p>© 2025 Glendys Balaguera — VisionFlow Project</p>

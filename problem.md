@@ -1,43 +1,49 @@
----
-layout: page
-title: Problem & Motivation
-permalink: /problem.html
----
+# Problem & Motivation
 
-# 🚦 Problem & Motivation
+## Real-World Problem
 
-Modern cities depend on road transportation, but:
+Urban roads and highways are getting more congested every year.  
+Cities install fixed traffic cameras, but most of the time those cameras are just **recording video** with no automatic understanding of what’s happening.
 
-- Crashes and near-misses can happen in seconds  
-- Humans can’t constantly watch every camera feed  
-- Most camera systems just record video without understanding it  
+Human operators can’t watch every camera 24/7, so:
 
----
+- Traffic jams can build up before anyone notices.
+- Accidents or blocked lanes may not be detected quickly.
+- There’s no easy way to measure *how often* certain roads are congested.
 
-## 🎯 Project Problem
+## VisionFlow Goal
 
-The simplified problem I tackle in **VisionFlow** is:
+**VisionFlow** uses a convolutional neural network (AlexNet) to classify camera images into:
 
-> **Given a traffic-camera image, decide whether it shows “traffic” or “no traffic”.**
+- 🟥 **Traffic** – heavy or moderate congestion
+- 🟩 **No Traffic** – light traffic / mostly clear road
 
-This is a first step toward:
+This is a **binary classification** problem: given a single image, predict whether the scene shows traffic or not.
 
-- Detecting unusual congestion  
-- Spotting empty roads when they *should* be busy  
-- Supporting real-time traffic dashboards and smart-city planning  
+## Why This Matters
 
----
+If this kind of model works well, it could help:
 
-## 🌍 Why It Matters
+- 🏙️ **Smart cities**: automatic monitoring of traffic cameras in real time  
+- 🚑 **Faster response**: quickly flag frames where there is likely congestion or an incident  
+- 📊 **Better analytics**: estimate how often particular intersections are congested over time  
+- 🌱 **Environment**: less time in stop-and-go traffic = lower emissions
 
-- **Safety** – Faster awareness of potential incidents  
-- **Efficiency** – Helps operators monitor many locations  
-- **Data** – Provides structured information instead of raw video  
+## Dataset Used
 
-Even though this project uses a small, labeled dataset, the same ideas can extend to:
+For this project, I created a small custom dataset with two folders:
 
-- Accident detection  
-- Multi-class traffic states  
-- Integration with automated alerts
+- `traffic/` – images that clearly show many cars / congestion
+- `no_traffic/` – images where the road is relatively empty
 
-[⬅ Back to Home](index.md) · [Next: Technical Approach →](technical.md)
+The dataset is stored in Google Drive and loaded into Colab with PyTorch’s `ImageFolder`:
+
+- **Classes:** `traffic`, `no_traffic`  
+- **Train images:** ~160  
+- **Validation images:** ~40  
+
+Even though this is a small dataset, it’s enough to:
+
+- Train a working AlexNet classifier  
+- Run experiments with batch size, learning rate, and augmentation  
+- Compare AlexNet to another architecture (e.g., ResNet18)

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Problem & Motivation
+---
+
 # Problem & Motivation
 
 ## Real-World Problem

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Experiments & Results
+---
+
 # Experiments & Results
 
 This page summarizes my main experiments with AlexNet on the VisionFlow traffic dataset and shows how the model behaved during training.

@@ -1,26 +1,26 @@
 # 🔬 Experimental Results & Visualizations
 
-The following charts show the baseline performance of the AlexNet model trained on the VisionFlow dataset.
+Here are the baseline training metrics for the AlexNet model trained on the VisionFlow dataset.
 
 ---
 
 ## 📈 Training Accuracy
-![Training Accuracy](YOUR_TRAIN_ACC_LINK_HERE)
+![Training Accuracy](https://raw.githubusercontent.com/gbalaguera2025-design/visionflow/main/Screenshot%202025-12-09%20014630.png)
 
 ---
 
 ## 📉 Training Loss
-![Training Loss](YOUR_TRAIN_LOSS_LINK_HERE)
+![Training Loss](https://raw.githubusercontent.com/gbalaguera2025-design/visionflow/main/Screenshot%202025-12-09%20014607.png)
 
 ---
 
 ## ✅ Validation Accuracy
-![Validation Accuracy](YOUR_VAL_ACC_LINK_HERE)
+![Validation Accuracy](https://raw.githubusercontent.com/gbalaguera2025-design/visionflow/main/Screenshot%202025-12-09%20014544.png)
 
 ---
 
 ## ❌ Validation Loss
-![Validation Loss](YOUR_VAL_LOSS_LINK_HERE)
+![Validation Loss](https://raw.githubusercontent.com/gbalaguera2025-design/visionflow/main/Screenshot%202025-12-09%20014520.png)
 
 ---
 
